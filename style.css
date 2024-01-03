@@ -1,0 +1,339 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --bg-color: #FFE1F1;
+    --bg-accent: #A36B83;
+    --accent1: #8f0541;
+    --accent2: #601C40;
+    --text1: #fff;
+    --text2: #222;
+    
+}
+
+
+body{
+    background-color:  var(--bg-color)
+}
+
+
+
+/* header */
+
+.navbar{
+    background-color: var(--bg-accent);
+    font-family: 'Bungee';
+}
+
+
+
+.navbar-brand{
+    color: var(--accent1)!important;
+    font-size: 2rem;
+    padding-left: 4%;
+    margin-bottom: 0;
+    text-decoration: none;
+
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 2rem;
+    padding-right: 1rem;
+    list-style-type: none;
+    color: var(--text1);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text1);
+}
+
+nav ul li a:hover{
+    color:var(--accent2);
+}
+
+.active-link{
+    color: var(--accent2);
+}
+
+/* hero section */
+
+.imagine-carusel{
+    height: 100vh;
+    object-fit: cover;
+}
+
+#carouselExampleIndicators{
+    position: relative;
+}
+
+.hero-text{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Bungee';
+    color: var(--text1);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buton{
+    font-family: 'Bungee';
+    color: var(--text1);
+    background-color: var(--accent1);
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 25px; 
+    width: 110px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 5;
+    text-decoration: none;
+}
+
+.buton:hover{
+    color: var(--bg-accent);
+}
+
+.no-margin{
+    margin-bottom: 0;
+}
+
+.sectiune{
+    margin-top: 70px;
+}
+
+
+.info-img img{
+    width: 100%;
+}
+
+.info{
+    width: 60%;
+    padding-left: 130px;
+    padding-right: 170px;
+    padding-top: 40px;
+}
+
+h2{
+    font-family: 'Bungee';
+    color: var(--accent1);
+    font-size: 1.9rem !important;
+    padding-bottom: 25px;
+}
+
+h3{
+    font-family: 'Bungee';
+    color: var(--accent1);
+    font-size: 1.4rem !important;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h4{
+    font-family: 'Bungee';
+    color: var(--accent2);
+    font-size: 1.2rem !important;
+}
+
+/* artisti */
+
+.poze {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    padding-top: 0px;
+    justify-content: space-around;
+}
+
+
+
+.catel {
+            
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 150%;
+    overflow: hidden;
+}
+
+.imagine-catel{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+
+}
+
+#artisti {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+    
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--accent1);
+    opacity: 50%;
+}
+
+.nume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--accent1);
+    font-family: 'Bungee';
+    padding-top: 10px;
+
+}
+
+.buton{
+    font-family: 'Bungee';
+    color: #fff;
+    background-color: #E98F9F;
+    margin: 50px;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 25px; 
+    width: 180px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    text-decoration: none;
+}
+
+.buton:hover{
+    color: var(--accent1);
+}
+
+.container-genuri{
+    
+    color: var(--text2);
+    font-family: 'Averia Libre';
+    
+}
+
+.introducere{
+    padding-left: 25px;
+}
+
+
+.img-genuri img{
+    width: 100%;
+}
+
+.card-title{
+    font-family: 'Bungee';
+    color: var(--accent1);
+}
+
+.card-text{
+    font-family: 'Averia Libre';
+    color: var(--text2);
+}
+
+/* footer*/
+
+.contact-icons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.icon-containers{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.icon-containers p{
+    display: flex;
+    color: var(--text2);font-family: 'Averia Libre';
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.icon-containers a{
+    text-decoration: none;
+}
+
+.instagram:hover{
+    color: var(--accent2);
+}
+
+.icon{
+   width: 10rem;
+   height: 10rem;
+}
+
+footer{
+    border-top: solid #8f0541 3px ;
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.footer-logo{
+    font-family: 'Bungee';
+    color: var(--accent1);
+    font-size: 2rem;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+.logo-and-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info{
+    font-family: 'Averia Libre';
+    color: var(--text1);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-accent);
+    padding-bottom: 20px;
+    font-family: 'Averia Libre';
+}
+
+footer ul {
+    list-style: none;
+}
+
+
